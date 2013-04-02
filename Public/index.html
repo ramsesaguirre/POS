@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>:: CICE :: ENCUESTA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<script src="http://use.edgefonts.net/pt-sans-caption.js"></script>
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+    	/*font-family: lato, serif; 
+      	font-family: m-1c, serif;
+		font-family: muli, serif;*/
+		font-family: pt-sans-caption, serif;
+        height: 100%;
+		background-image:url(img/bg.jpg);
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      .container {
+        width: auto;
+        max-width: 700px;
+		background-color:#FFF;
+		padding-left: 25px;
+		padding-right: 25px;
+		border-width: 1px;
+		border-style:solid;
+		border-color:#dddddd;
+		-moz-box-shadow: 2px 2px 15px #dbdbdb;
+		-webkit-box-shadow: 2px 2px 15px #dbdbdb;
+		box-shadow: 2px 2px 15px #dbdbdb;
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+	  textarea
+	  {
+ 		width:100%;
+    	margin:5px 0;
+    	padding:3px;
+	  }
+
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+  <script src="js/jquery.min.js"></script>                                   
+  
+  </head>
+
+  <body>
+
+
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+ 
+      <br />  
+        
+      <!-- Begin page content -->
+      <div class="container" id="container">
+      
+        <div class="page-header" id="header">
+          <center><img src="img/logo.gif" /></center>
+          <center><h3>ENCUESTA DE SATISFACCIÓN DESPACHO CONSULTOR.</h3></center>
+        </div>
+       
+  <p class="muted" style="text-align : justify;">El presente instrumento tiene como propósito conocer el nivel de satisfacción del servicio brindado por el Centro de Innovación y Competitividad Empresarial de la Benemérita Universidad Autónoma de Puebla y los despachos consultores. El resultado de esta encuesta servirá para mejorar nuestra atención y servicio.</p>
+  
+  <div class="alert">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <h4 class="alert-heading">Importante!</h4>
+  <p class="muted"><small>La información solicitada, será de carácter confidencial.</small></p>
+  </div>
+  
+  <center><h4 class="text-error">CENTRO DE INNOVACIÓN Y COMPETITIVIDAD EMPRESARIAL.</h4></center><br />
+        
+        <form class="form-horizontal">
+  <fieldset>
+    <legend><h5 class="text-info">NOMBRE DEL DEPARTAMENTO: COORDINACIÓN DE INCUBACIÓN DE EMPRESAS</h5></legend>
+    <div class="control-group">
+    <label class="control-label" for="fecha">FECHA</label>
+    <div class="controls">
+    <div class="input-prepend">
+    <span class="add-on"><i class="icon-pencil"></i></span>
+    <input type="text" id="fecha" class="input-small" placeholder="Fecha Actual">
+    </div>
+    </div>
+    </div>
+    
+    <div class="control-group">
+    <label class="control-label" for="nombre">NOMBRE</label>
+    <div class="controls">
+    <div class="input-prepend">
+    <span class="add-on"><i class="icon-user"></i></span>
+    <input type="text" name="nombre" id="nombre" class="input-large" placeholder="Nombre del despacho consultor">
+    </div>
+    </div>
+    </div>
+    
+    <div class="control-group">
+    <label class="control-label" for="telefono">TELÉFONO</label>
+    <div class="controls">
+    <div class="input-prepend">
+    <span class="add-on"><i class="icon-pencil"></i></span>
+    <input type="text" id="telefono" placeholder="Teléfono de contacto">
+    </div>
+    </div>
+    </div>
+    
+    <div class="control-group">
+    <label class="control-label" for="email">CORREO</label>
+    <div class="controls">
+    <div class="input-prepend">
+    <span class="add-on"><i class="icon-envelope"></i></span>
+    <input type="text" id="email" placeholder="Correo de contacto">
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <br />
+    <dl class="dl-horizontal">
+    <dt>INSTRUCCIONES:</dt>
+    <dd>
+    <blockquote>
+    <p class="muted" style="text-align : justify; font-size:13px; padding-right: 40px;">Señale con número su nivel de satisfacción de acuerdo a la siguiente escala de valores: Excelente E=5; Bueno B=4; Regular R=3; Malo M=2 y Pésimo P=1; o bien, No Aplica NA=0.</p>
+    </blockquote>
+    </dd>
+    </dl>
+    
+<table class="table table-hover">
+  <tr>
+    <td>1</td>
+    <td><p>¿Cómo califica la preparación de los consultores que lo  asesoraron en el desarrollo de su Plan de Negocios?</p></td>
+    <td>
+    <select class="span1">
+    	<option>0</option>
+  		<option>1</option>
+  		<option>2</option>
+  		<option>3</option>
+  		<option>4</option>
+  		<option>5</option>
+	</select>
+    </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>¿Qué  le pareció el seguimiento en su Plan de Negocios por parte de los consultores?</td>
+    <td>
+    <select class="span1">
+    	<option>0</option>
+  		<option>1</option>
+  		<option>2</option>
+  		<option>3</option>
+  		<option>4</option>
+  		<option>5</option>
+	</select>
+    </td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>¿Qué  le pareció la metodología utilizada por los consultores?</td>
+    <td>
+    <select class="span1">
+    	<option>0</option>
+  		<option>1</option>
+  		<option>2</option>
+  		<option>3</option>
+  		<option>4</option>
+  		<option>5</option>
+	</select>
+    </td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>¿Qué  le pareció la capacidad para resolver dudas por parte de los consultores?</td>
+    <td>
+    <select class="span1">
+    	<option>0</option>
+  		<option>1</option>
+  		<option>2</option>
+  		<option>3</option>
+  		<option>4</option>
+  		<option>5</option>
+	</select>
+    </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>¿Qué  le pareció la información brindada por los consultores sobre su proyecto?</td>
+    <td>
+    <select class="span1">
+    	<option>0</option>
+  		<option>1</option>
+  		<option>2</option>
+  		<option>3</option>
+  		<option>4</option>
+  		<option>5</option>
+	</select>
+    </td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>¿Las  sugerencias y recomendaciones que los consultores le brindaron para reforzar  los temas vistos le pareció?</td>
+    <td>
+    <select class="span1">
+    	<option>0</option>
+  		<option>1</option>
+  		<option>2</option>
+  		<option>3</option>
+  		<option>4</option>
+  		<option>5</option>
+	</select>
+    </td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>¿El  nivel de alcance en el desarrollo y estructuración de su Plan de Negocios fue?</td>
+    <td>
+    <select class="span1">
+    	<option>0</option>
+  		<option>1</option>
+  		<option>2</option>
+  		<option>3</option>
+  		<option>4</option>
+  		<option>5</option>
+	</select>
+    </td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>¿La  retroalimentación de los consultores respecto a su Plan de Negocios  fue: (asesorías programadas, dudas, seguimiento)?</td>
+    <td>
+    <select class="span1">
+    	<option>0</option>
+  		<option>1</option>
+  		<option>2</option>
+  		<option>3</option>
+  		<option>4</option>
+  		<option>5</option>
+	</select>
+    </td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>¿Los  consultores le ofrecieron el servicio básico de diseño (Logotipo, Tarjeta de  Presentación, Flyer y Hoja membretada) y que le pareció este?</td>
+    <td>
+    <label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+  Si
+</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+  No
+</label>
+    </td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>En  general, el nivel de las consultorías respecto a la cuota de recuperación y sus  expectativas fue:</td>
+    <td>
+    <select class="span1">
+    	<option>0</option>
+  		<option>1</option>
+  		<option>2</option>
+  		<option>3</option>
+  		<option>4</option>
+  		<option>5</option>
+	</select>
+    </td>
+  </tr>
+</table>
+
+  <label for="observaciones">Observaciones o Sugerencias:</label>
+  <textarea name="observaciones" id="observaciones" rows="3"></textarea>
+    <br /><br /><br />
+    <a class="btn btn-info" href="#"><i class="icon-chevron-right icon-white"></i> Enviar Encuesta</a>
+    <br /><br /><br />
+    
+  </fieldset>
+</form>
+        
+      </div>
+
+      <div id="push">
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container" style="background-color: #f5f5f5;">
+        <p class="muted credit">Cortesía de <a href="http://solucion-es9.com">solucion-es9</a></p>
+      </div>
+    </div>
+<br /><br />
+	
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+$(function(){
+	$("input[name=nombre]").focus();
+});
+</script>
+
+    
+  </body>
+</html>

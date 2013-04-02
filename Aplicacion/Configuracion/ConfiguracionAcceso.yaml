@@ -1,0 +1,20 @@
+#Centro de Registro de Acceso a Aplicaciones
+APLICACIONES:
+#Aplicacion Default es aquel que cargara si no se escribe el nombre de la aplicacion
+	DEFAULT:
+		CARPETA: 				'Pos/'
+		LLAVE_ENCRIPTACION:		'N3ur4l3ncr1pt4c10n'
+		CONFIGURACION: 			'Configuracion/'
+		AYUDAS: 				'Helpers/'
+		CONTROLADORES: 			'Controladores/'
+		MODELOS: 				'Modelos/'
+		VISTAS: 				'Vistas/'
+
+	POS:
+		CARPETA: 				'Pos/'
+		LLAVE_ENCRIPTACION:		'N3ur4l3ncr1pt4c10n'
+		CONFIGURACION: 			'Configuracion/'
+		AYUDAS: 				'Helpers/'
+		CONTROLADORES: 			'Controladores/'
+		MODELOS: 				'Modelos/'
+		VISTAS: 				'Vistas/'

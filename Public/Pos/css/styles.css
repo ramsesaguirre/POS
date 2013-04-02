@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+#cont{ width: 800px; margin: 0 auto 0 auto; text-align: left;}
+#encabezado{ height: 75px; margin-bottom: 35px; width: 800px;}
+
+form input{
+  	border-radius: 0.30em;
+	border: #b6cef0 1px solid;
+	font-size: 10px;
+    color:#828282;
+}
+ 
+#contenido{ width: 560px; float: left; margin-bottom: 70px;}
+#contenido p{font-size: 11px; color:#636363;}	    
+#menu{ margin-left: 20px; width: 210px; float: left; }
+
+#pie{ clear: both;  height: 2px;}
+#pie p{ text-align: right; font-size: 11px; padding-right: 14px;}
+a{text-decoration:none;}
+
+
+.container {width: 960px; padding: 10px 0;}
+
+.header { }
+
+.footer { padding: 10px 0;}
+
+#tabs-min {
+	background: transparent;
+	border: none;
+}
+#tabs-min .ui-widget-header {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #c0c0c0;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+#tabs-min .ui-state-default {
+	background: transparent;
+	border: none;
+}
+#tabs-min .ui-state-active {
+	background: transparent url(../img/uiTabsArrow.png) no-repeat bottom center;
+	border: none;
+}
+#tabs-min .ui-state-default a {
+	color: #c0c0c0;
+}
+#tabs-min .ui-state-active a {
+	color: #459E00;
+}

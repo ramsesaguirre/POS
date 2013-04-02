@@ -1,0 +1,22 @@
+#Centro de Registro de Acceso a Aplicaciones
+APLICACIONES:
+#Aplicacion Default es aquel que cargara si no se escribe el nombre de la aplicacion
+    DEFAULT:
+      FUNCION_MAIL:     DESHABILITADO
+      CONFIGURACION:
+          IsSMTP:       true
+          SMTPAuth:     true
+          SMTPSecure:   ssl
+          Host:         ssl://smtp.gmail.com
+          Port:         465
+          Username:     correo@gmail.com
+          Password:          
+
+    MI_APLICACION:
+      FUNCION_MAIL:     DESHABILITADO
+      CONFIGURACION:
+          SMTPAuth:     true
+          Host:         'ssl://smtp.gmail.com'
+          Port:         465
+          Username:     correo@gmail.com
+          Password:     

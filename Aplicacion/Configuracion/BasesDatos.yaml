@@ -1,0 +1,18 @@
+#Centro de Registro de Bases de Datos de cada Aplicacion
+BASEDATOS:
+#Registramos los datos de acceso de bases de datos por defecto o primaria
+	DEFAULT: 
+		dbname: 	  test
+		user:         programador
+		password:     r29a76
+		host:         localhost
+		driver:       pdo_mysql
+		charset:      iso-8859-1
+
+	POS:
+		dbname:       pos
+		user:         programador
+		password:     r29a76
+		host:         localhost
+		driver:       pdo_mysql
+		charset:      utf8

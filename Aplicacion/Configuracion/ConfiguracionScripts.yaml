@@ -1,0 +1,37 @@
+#Administrador de Scripts de las aplicaciones que se encuentran en la carpeta Public
+DEFAULT:
+	JS:
+		JQUERY:			'Public/js/jquery-1.8.3.Dev.js'
+		VALIDATE:		'Public/js/jquery.validate.js'
+	CSS:
+		BOOSTRAP:		'Public/css/bootstrap.css'
+		RESPONSIVE:		'Public/css/bootstrap-responsive.css'
+		DOCS:			'Public/css/docs.css'
+	LOADER:
+		LOADER: 		'Public/images/Load/neural_load.gif'
+		CLASS:
+			IMAGEN:		{ CLASS: 'DESACTIVADO', STYLE: 'DESACTIVADO' }
+			CONTENEDOR:	{ CLASS: 'DESACTIVADO', STYLE: 'DESACTIVADO' }
+		STYLE:
+			IMAGEN:		{ border: '0px', font-family: 'verdana', width: '25px', height: '25px' }
+			CONTENEDOR:	{ border: '0px', font-family: 'verdana', text-align: 'center' }
+
+POS:
+	JS:
+		JQUERY:			'Public/Pos/js/jquery-1.8.3.min.js'
+		JQUERYUILIB:	'Public/Pos/js/jquery-ui-1.9.2.custom.min.js'
+		JQGRID:			'Public/Pos/js/jquery.jqGrid.min.js'
+		I18N:			'Public/Pos/js/i18n/grid.locale-es.js'
+		VALIDATE:		'Public/js/jquery.validate.js'
+	CSS:
+		HOME:			'Public/Pos/css/styles.css'
+		JQUERYUI:		'Public/Pos/css/default-theme/jquery-ui-1.9.2.custom.min.css'
+		JQGRID:			'Public/Pos/css/ui.jqgrid.css'
+	LOADER:
+		LOADER: 		'Public/images/Load/neural_load.gif'
+		CLASS:
+			IMAGEN:		{ CLASS: 'DESACTIVADO', STYLE: 'DESACTIVADO' }
+			CONTENEDOR:	{ CLASS: 'DESACTIVADO', STYLE: 'DESACTIVADO' }
+		STYLE:
+			IMAGEN:		{ border: '0px', font-family: 'verdana' }
+			CONTENEDOR:	{ border: '0px', font-family: 'verdana' }

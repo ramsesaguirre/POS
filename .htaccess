@@ -1,0 +1,80 @@
+##
+# Neural Framework
+# 
+# Reglas de htaccess para bloques y administracion de contenido
+##
+
+##
+#	Mostramos los errores correspondientes
+##
+php_flag display_errors on
+php_value error_reporting 9999
+
+##
+#	Generamos la modificacion del URL para el manejo del MVC
+##
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+##
+# Redireccionamos los Feeds de Wordpress a FeedBurner
+#
+# Debe estar iniciado el RewriteEngine On
+##
+
+RewriteCond %{HTTP_USER_AGENT} !FeedBurner [NC]
+RewriteCond %{HTTP_USER_AGENT} !FeedValidator [NC]
+RewriteRule ^feed/?([_0-9a-z-]+)?/?$ http://feeds.feedburner.com/tufeed [R=302,NC,L]
+
+##
+# Desactivamos la exploracion de directorios
+##
+Options All -Indexes
+
+##
+# Comprimir la información antes de enviarla, Ahorro de ancho de banda
+##
+php_value zlib.output_compression 16386
+
+##
+#Bloquear los bots no deseados
+##
+SetEnvIfNoCase user-Agent ^FrontPage [NC,OR]
+SetEnvIfNoCase user-Agent ^Java.* [NC,OR]
+SetEnvIfNoCase user-Agent ^Microsoft.URL [NC,OR]
+SetEnvIfNoCase user-Agent ^MSFrontPage [NC,OR]
+SetEnvIfNoCase user-Agent ^Offline.Explorer [NC,OR]
+SetEnvIfNoCase user-Agent ^[Ww]eb[Bb]andit [NC,OR]
+SetEnvIfNoCase user-Agent ^Zeus [NC]
+
+Order Allow,Deny
+Allow from all
+Deny from env=bad_bot
+
+##
+# Activacion de la Cache de Imagenes en el servidor
+#
+# Recordar que se pueden generar la expiracion de la cache con las siguientes clases de tiempo
+# "year"
+# "month"
+# "week"
+# "day"
+# "hour"
+# "minute"
+# "second"
+#
+# Descomentar las lineas siguientes para entornos de produccion
+#
+
+#ExpiresActive on
+#ExpiresByType application/javascript "access plus 7 day"
+#ExpiresByType image/jpg "access plus 7 day"
+#ExpiresByType image/jpeg "access plus 7 day"
+#ExpiresByType image/gif "access plus 7 day"
+#ExpiresByType image/png "access plus 7 day"
+#ExpiresByType text/css "access plus 7 day"
