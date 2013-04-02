@@ -83,7 +83,7 @@
 	  * Opciones soportadas HABILITADO - DESHABILITADO
 	  * 
 	  * */
-	  define('__SysNeuralCoreCache__', 'HABILITADO');
+	  define('__SysNeuralCoreCache__', 'DESHABILITADO');
 	  
 	  /**
 	  * Sistema de Cache simple para procesos del CORE 
@@ -99,7 +99,7 @@
 	   * http://www.php.net/manual/es/timezones.php
 	   * 
 	   * */
-	  date_default_timezone_set("America/Mexico_City");
+	  date_default_timezone_set("America/Bogota");
 	  
 	  /**
 	   * Configuracion del tiempo limite de ejecucion de un script
