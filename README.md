@@ -9,5 +9,6 @@ Demo
 http://pos.vpskee.org
 
 Realizado por:
-    Ramses Aguirre
-    ramsesaguirre2012@gmail.com
+Ramses Aguirre
+ramsesaguirre2012@gmail.com
+
